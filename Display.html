@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Smart Mirror - | Display | </title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav
+        {
+            width: 100%;
+            top: 0;
+            height : 60px;
+            line-height: 75px;
+            padding: 0px 100px;
+            position : fixed;
+            background-color: black;
+            border: black;
+            z-index: 9999;
+        }
+        nav p
+        {
+            font-size: 20px;
+            font-weight: bold;
+            float:left;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer; 
+            font-family: cursive;
+        }
+        body
+        {
+            line-height: 70px;
+            height: 500px;
+            background-color: aliceblue;
+            color: black;
+        }
+        input, textarea
+        {
+            width: 90%;
+            height: 200px;
+            padding: 10px;
+            font-size: 15px;
+            border: black;
+        }
+        .box
+        {
+            height: 800px;
+            margin-top: 200px;
+            margin-left: 500px;
+        }
+        .form
+        {
+            padding-left: 20px;
+            height: 400px;
+            width: 500px;
+            color: black;
+            background-color: azure;
+        }
+        footer
+        {
+            background-color: black;
+            color:azure;
+            padding: 20px 80px;
+            align-items: center;
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <p> Display </p>
+        </div>
+    </nav>
+        <div class="box">
+            <div class="form">
+                <form action="index.php" method="post">  
+                    <button class="btn"> Text </button>
+                    <button class="btn"> Images </button>
+                    <button class="btn"> Videos </button>
+                    <input type ="text" name="name" id="name" placeholder="Text to display ">
+                    <button class="btn1"> Update </button>
+                </form>
+            </div>     
+        </div>
+    <footer>
+        <h6> SE-EXTC SLRTCE Copyright @2024 </h6>
+    </footer>
+</body>
+</html>
